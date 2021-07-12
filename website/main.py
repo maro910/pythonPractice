@@ -15,12 +15,13 @@ def hello_world():
 @app.route("/about")
 
 def about():
-  return render_template('about.html', subtitle='About Page')
+  return render_template('about.html', subtitle='About Page', text='Welcome to my about page')
 
 @app.route("/home")
 
 def home():
-  return render_template('home.html', subtitle='Home Page')
+  return render_template('home.html', subtitle='Home Page', 
+                         text='This is the home page')
 
 
 
